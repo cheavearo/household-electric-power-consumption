@@ -35,7 +35,7 @@ for filepath in list_of_files:
     filedir, filename=os.path.split(filepath)
 
     ## If file dictory does not exist, create this directory with its {filename}
-    if filedir !=" ":
+    if filedir !="":
         os.makedirs(filedir,exist_ok=True)
         logging.info(f"Created {filedir} directory for {filename} is done")
         '''
